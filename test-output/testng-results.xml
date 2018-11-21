@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[https://quality.saplingapp.io/#/updates]]>
+    </line>
+    <line>
+      <![CDATA[Login sucess]]>
+    </line>
+    <line>
+      <![CDATA[https://quality.saplingapp.io/#/updates]]>
+    </line>
+    <line>
+      <![CDATA[Login sucess]]>
+    </line>
+    <line>
+      <![CDATA[https://quality.saplingapp.io/#/updates]]>
+    </line>
+    <line>
+      <![CDATA[Login sucess]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="156778" started-at="2018-10-29T09:52:47Z" finished-at="2018-10-29T09:55:24Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="24342" started-at="2018-10-29T09:52:47Z" finished-at="2018-10-29T09:53:12Z">
+      <class name="com.main.test.Saplingtest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.main.test.Saplingtest@cc285f4]" name="beforeTest" is-config="true" duration-ms="13381" started-at="2018-10-29T15:22:47Z" finished-at="2018-10-29T15:23:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.main.test.Saplingtest@cc285f4]" name="login" duration-ms="8913" started-at="2018-10-29T15:23:01Z" finished-at="2018-10-29T15:23:10Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.SocketException: Software caused connection abort: recv failed
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
+System info: host: 'DIZERC', ip: '192.168.1.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.SocketException: Software caused connection abort: recv failed
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
+System info: host: 'DIZERC', ip: '192.168.1.104', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:286)
+	at com.main.test.Saplingtest.login(Saplingtest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at okio.Okio$2.read(Okio.java:140)
+	at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.java:355)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
+	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
+	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.main.test.Saplingtest@cc285f4]" name="afterTest" is-config="true" duration-ms="2037" started-at="2018-10-29T15:23:10Z" finished-at="2018-10-29T15:23:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.main.test.Saplingtest -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="33205" started-at="2018-10-29T09:53:12Z" finished-at="2018-10-29T09:53:45Z">
+      <class name="com.main.test.Saplingtest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.main.test.Saplingtest@27efef64]" name="beforeTest" is-config="true" duration-ms="10108" started-at="2018-10-29T15:23:12Z" finished-at="2018-10-29T15:23:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.main.test.Saplingtest@27efef64]" name="login" duration-ms="22249" started-at="2018-10-29T15:23:22Z" finished-at="2018-10-29T15:23:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[https://quality.saplingapp.io/#/updates]]>
+            </line>
+            <line>
+              <![CDATA[Login sucess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.main.test.Saplingtest@27efef64]" name="afterTest" is-config="true" duration-ms="846" started-at="2018-10-29T15:23:44Z" finished-at="2018-10-29T15:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.main.test.Saplingtest -->
+    </test> <!-- ChromeTest -->
+    <test name="OperaTest" duration-ms="31731" started-at="2018-10-29T09:53:45Z" finished-at="2018-10-29T09:54:17Z">
+      <class name="com.main.test.Saplingtest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.main.test.Saplingtest@42d80b78]" name="beforeTest" is-config="true" duration-ms="8347" started-at="2018-10-29T15:23:45Z" finished-at="2018-10-29T15:23:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.main.test.Saplingtest@42d80b78]" name="login" duration-ms="22596" started-at="2018-10-29T15:23:53Z" finished-at="2018-10-29T15:24:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[https://quality.saplingapp.io/#/updates]]>
+            </line>
+            <line>
+              <![CDATA[Login sucess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.main.test.Saplingtest@42d80b78]" name="afterTest" is-config="true" duration-ms="785" started-at="2018-10-29T15:24:16Z" finished-at="2018-10-29T15:24:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.main.test.Saplingtest -->
+    </test> <!-- OperaTest -->
+    <test name="IETest" duration-ms="67413" started-at="2018-10-29T09:54:17Z" finished-at="2018-10-29T09:55:24Z">
+      <class name="com.main.test.Saplingtest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.main.test.Saplingtest@6a4f787b]" name="beforeTest" is-config="true" duration-ms="9794" started-at="2018-10-29T15:24:17Z" finished-at="2018-10-29T15:24:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.main.test.Saplingtest@6a4f787b]" name="login" duration-ms="57084" started-at="2018-10-29T15:24:27Z" finished-at="2018-10-29T15:25:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[https://quality.saplingapp.io/#/updates]]>
+            </line>
+            <line>
+              <![CDATA[Login sucess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.main.test.Saplingtest@6a4f787b]" name="afterTest" is-config="true" duration-ms="532" started-at="2018-10-29T15:25:24Z" finished-at="2018-10-29T15:25:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.main.test.Saplingtest -->
+    </test> <!-- IETest -->
+  </suite> <!-- Suite -->
+</testng-results>
